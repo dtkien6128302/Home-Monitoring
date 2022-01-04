@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <title>BAKSTERS</title>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> 
+</head>
+
+<body>
+  
+    <section id="services">
+      <div class="sidebar">  
+        <h1 style="color: white; font-size: x-large; padding-left: 50px; padding-top:20px">BAKSTERS</h1>
+        
+      </div>
+      <section class="home-section">
+    
+        <nav>
+          <div class="sidebar-button">
+            
+            <i class='bx bx-menu sidebarBtn'></i> 
+                       
+          </div>
+          <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><a href="{{ url_for('liveview') }}">Live View</a></li>
+            
+          </ul>
+          <ul>
+            <li><a href="{{ url_for('index')}}">Home</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+          
+        </nav>
+        
+        <div class="home-content">
+          <!-- <div  style="padding-left: 20px;">
+          <select>
+            <option value="">--Please Choose a Camera--</option>
+            <option value="dog">Camera 1</option>
+            <option value="cat">Camera 2</option>
+            <option value="hamster">Camera 3</option>
+            <option value="parrot">Camera 5</option>
+          </select>
+        </div> -->
+    
+          <div class="boxes">
+            <div class="Videobox">
+              <img style="height:90%; width: 90% " src="{{ url_for('video') }}">
+            </div>
+            <br>
+            
+          </div>
+          <div style="height: 10px;"></div>
+          <div class="noti">
+            <p style="font-size: 20px;">Notification Text </p>
+            <!-- <img style="width: 2px;" src="Images/Bell.png"> -->
+          </div>
+          
+        </div>
+      </section>
+  </section>
+  
+    <!-- End Service Section -->
+   
+  </section>
+  
+<!-- Footer -->
+<!-- Footer -->
+<section id="footer">
+    
+  <div style="align-items: left; padding-left: 20px; padding-top: 20px;">
+    <div id="parent">
+     <h2 id="child">BAKSTERS</h2>
+  </div>
+    <p>Envision your business with our solution.</p>
+     </div>
+  <div class="footer container">
+    <p>Copyright BAKSTERS CO., LTD. All rights reserved</p>
+  </div>
+</section>
+<!-- End Footer -->
+</body>
+
+</html>
+<script>
+  let sidebar = document.querySelector(".sidebar");
+let sidebarBtn = document.querySelector(".sidebarBtn");
+sidebarBtn.onclick = function() {
+ sidebar.classList.toggle("active");
+ if(sidebar.classList.contains("active")){
+ sidebarBtn.classList.replace("bx-menu" ,"bx-menu-alt-right");
+}else
+ sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+}
+</script>

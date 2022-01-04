@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+  <title>BAKSTERS</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="{{ url_for('index')}}">
+            <img src="{{ url_for('static',filename='Images/logo1.png') }}">
+          </a>
+        </div>
+        <div class="nav-list">
+          <ul>
+            <li><a href="{{ url_for('index')}}">Home</a></li>
+            <li><a href="{{ url_for('liveview')}}">Live View</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- End Header -->
+    <!-- Live View Section -->
+  <section id="services">
+    <div class="services container">
+      <div >
+        <img src="{{ url_for('static', filename='Images/Banner.png')}}" alt="Connection error">
+        
+      </div>
+      <h2 >Welcome to BAKSTERS</h2>
+      <div class="service-bottom">
+        
+        <div style="margin-right: 200px;">
+         
+          <h2 style="padding-top: 35px;" >Our Mission</h2>
+          <p style="text-align: center; "> 
+            Smart Security</p> <p style="text-align: center;"> 
+            Run a smart Security system which can be able to<br> detect dangerous situation such as:</p>
+            <p style="text-align: left; padding-left: 120px;">
+            - Falling
+            <br>
+            - Screaming
+            <br>
+            - Objects breaking
+          </p>
+        </div>
+        <div  style="padding-bottom: 18px;" >
+          <h2 >Our Innovative Technology</h2>
+          <p >Sensor</p> 
+          <p style="text-align: left; padding-left: 20px;"> 
+            - IR Sensor - Light Beams
+            <br>
+            - Sound Sensor - Sound
+            <br>
+            - PIR Sensor - Energy Detection
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="pictures" style="text-align: center">
+      <img style="width: 700px;" src="{{ url_for('static', filename='Images/Object.png') }}" alt="falling">
+      
+    </div>
+  </section>
+  <!-- End Service Section -->
+
+  
+
+ 
+  <!-- Footer -->
+  <section id="footer">
+    
+    <div style="align-items: left; padding-left: 20px; padding-top: 20px;">
+      <div id="parent">
+       <h2 id="child">BAKSTERS</h2>
+    </div>
+      <p>Envision your business with our solution.</p>
+       </div>
+    <div class="footer container">
+      <p>Copyright BAKSTERS CO., LTD. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  </section>
+  
+
+
+  
+
+</body>
+
+</html>
